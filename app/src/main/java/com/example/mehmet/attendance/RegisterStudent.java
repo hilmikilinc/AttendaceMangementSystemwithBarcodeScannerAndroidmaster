@@ -84,12 +84,6 @@ public class RegisterStudent extends AppCompatActivity {
         });
 
 
-        Delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DeleteData();
-            }
-        });
     }
 
     public void SubmitBtn(View view) {
@@ -120,18 +114,6 @@ public class RegisterStudent extends AppCompatActivity {
         }
     }
 
-    public void DeleteData(String ){
-        Delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Integer deletedRows=mydb.deleteData(RegisterForm.getText().toString());
-                if (deletedRows>0)
-                    Toast.makeText(RegisterStudent.this,"Data Deleted",Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(RegisterStudent.this,"Data not Uptaded",Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
 }
 
