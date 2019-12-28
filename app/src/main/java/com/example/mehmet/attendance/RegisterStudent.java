@@ -86,6 +86,7 @@ public class RegisterStudent extends AppCompatActivity {
 
     }
 
+
     public void SubmitBtn(View view) {
         int selectedid = grpbtn.getCheckedRadioButtonId();
         radiobtn = (RadioButton) findViewById(selectedid);
